@@ -17,11 +17,22 @@ export default function ImageTextCarousel({ name }: ImageTextCarouselProps) {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`/home-json/${name}.json`)
-      .then((res) => res.json())
-      .then((data) => setUtilities(data))
-      .catch((err) => console.error("Failed to load utilities:", err));
+    const fetchUtilities = async () => {
+      try {
+        const res = await fetch(`/home-json/${name}.json`);
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        const data = await res.json();
+        setUtilities(data);
+      } catch (err) {
+        console.error("Failed to load utilities:", err);
+      }
+    };
+
+    fetchUtilities();
   }, [name]);
+
 
   return (
     <div className='flex flex-col gap-5 min-h-48'>

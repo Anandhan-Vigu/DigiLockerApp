@@ -9,21 +9,30 @@ interface UtilityItem {
   link: string
 }
 
-interface UtilityGridProps {
-  name: string;
-}
 
-const UtilityGrid: React.FC<UtilityGridProps> = ({ name }) => {
+
+export default async function UtilityGrid({ name }: { name: string }) {
   const [utilities, setUtilities] = useState<UtilityItem[]>([]);
   const [selectedItem, setSelectedItem] = useState<UtilityItem | null>(null);
   const navigate = useNavigate(); // <-- add this
-console.log('received',name)
+  console.log('received', name)
   useEffect(() => {
-    fetch(`/home-json/${name}.json`)
-      .then((res) => res.json())
-      .then((data) => setUtilities(data))
-      .catch((err) => console.error("Failed to load utilities:", err));
+    const fetchUtilities = async () => {
+      try {
+        const res = await fetch(`/home-json/${name}.json`);
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        const data = await res.json();
+        setUtilities(data);
+      } catch (err) {
+        console.error("Failed to load utilities:", err);
+      }
+    };
+
+    fetchUtilities();
   }, [name]);
+
 
   return (
     <div>
@@ -47,11 +56,10 @@ console.log('received',name)
       {selectedItem && (
         <UtilityModal
           item={selectedItem}
-          onClose={() => setSelectedItem(null)} 
+          onClose={() => setSelectedItem(null)}
         />
       )}
     </div>
   );
 };
 
-export default UtilityGrid;
