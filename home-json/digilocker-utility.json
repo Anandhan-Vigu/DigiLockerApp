@@ -1,0 +1,43 @@
+[
+  {
+    "image": "Utility/authenticator.png",
+    "label": "Authenticator",
+    "link":"/authenticator"
+  },
+  {
+    "image": "Utility/drive.png",
+    "label": "Drive"
+  },
+  {
+    "image": "Utility/verifiablecredentials.png",
+    "label": "Verifiable Credential"
+  },
+  {
+    "image": "Utility/emblem.png",
+    "label": "Govt. Employee"
+  },
+  {
+    "image": "Utility/nominee.png",
+    "label": "Nominee"
+  },
+  {
+    "image": "Utility/myconsent.png",
+    "label": "My Consent"
+  },
+  {
+    "image": "Utility/myactivity.png",
+    "label": "My Activity"
+  },
+  {
+    "image": "Utility/scanqr.png",
+    "label": "Scan QR"
+  },
+  {
+    "image": "Utility/umang.png",
+    "label": "UMANG"
+  },
+  {
+    "image": "Utility/abha.png",
+    "label": "ABHA"
+  }
+]
