@@ -9,7 +9,7 @@ const Welcome = () => {
     <main className="flex flex-col gap-10 w-full">
       <Profile />
       <div className="flex flex-col gap-5 px-5">
-        <p className="font-semibold text-black text-base ">DigiLocker Utility ss</p>
+        <p className="font-semibold text-black text-base ">DigiLocker Utility</p>
         <div className="h-[536px]">
           <UtilityGrid name='digilocker-utility' />
         </div>

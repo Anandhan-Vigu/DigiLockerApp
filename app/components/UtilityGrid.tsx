@@ -11,7 +11,7 @@ interface UtilityItem {
 
 
 
-export default async function UtilityGrid({ name }: { name: string }) {
+export default  function UtilityGrid({ name }: { name: string }) {
   const [utilities, setUtilities] = useState<UtilityItem[]>([]);
   const [selectedItem, setSelectedItem] = useState<UtilityItem | null>(null);
   const navigate = useNavigate(); // <-- add this
