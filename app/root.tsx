@@ -27,8 +27,13 @@ export const links: Route.LinksFunction = () => [
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const location = useLocation();
-  const hideFooter =
-    location.pathname.startsWith("/document-you-might-need/");
+const showFooter = ["/", "/search", "/profile-menu", "/issued"].some(path =>
+  location.pathname === path || location.pathname.startsWith(path + "/")
+);
+
+console.log('location',location)
+console.log('bool',showFooter)
+
   return (
 
     <html lang="en" className="bg-gray-50">
@@ -38,12 +43,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className={`${!hideFooter?'mb-20':''}`}>
+      <body className={`${showFooter?'mb-20':''} max-w-[767px] `}>
         {children}
         <ScrollRestoration />
         <Scripts />
       </body>
-      {!hideFooter && (
+      {showFooter && (
         <footer>
           <Footer />
         </footer>

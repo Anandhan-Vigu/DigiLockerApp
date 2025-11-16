@@ -43,7 +43,8 @@ export default  function UtilityGrid({ name }: { name: string }) {
             key={idx}
             className="bg-gray-100 h-32 pt-5 pl-3 pr-5 rounded-md cursor-pointer hover:bg-gray-200 transition"
             onClick={() => {
-              setSelectedItem(item)
+              // setSelectedItem(item)
+              navigate(item.link)
             }}
           >
             <img src={item.image} alt={item.label} className=" h-10 mb-4" />

@@ -2,42 +2,51 @@
   {
     "image": "Utility/authenticator.png",
     "label": "Authenticator",
-    "link":"/authenticator"
+    "link": "/authenticator"
   },
   {
     "image": "Utility/drive.png",
-    "label": "Drive"
+    "label": "Drive",
+    "link": "/drive"
   },
   {
     "image": "Utility/verifiablecredentials.png",
-    "label": "Verifiable Credential"
+    "label": "Verifiable Credential",
+    "link": "/verifiable-credential"
   },
   {
     "image": "Utility/emblem.png",
-    "label": "Govt. Employee"
+    "label": "Govt. Employee",
+    "link": "/government-employee"
   },
   {
     "image": "Utility/nominee.png",
-    "label": "Nominee"
+    "label": "Nominee",
+    "link": "/nominee"
   },
   {
     "image": "Utility/myconsent.png",
-    "label": "My Consent"
+    "label": "My Consent",
+    "link": "/my-consents"
   },
   {
     "image": "Utility/myactivity.png",
-    "label": "My Activity"
+    "label": "My Activity",
+    "link": "/my-activity"
   },
   {
     "image": "Utility/scanqr.png",
-    "label": "Scan QR"
+    "label": "Scan QR",
+    "link": "/scan-qr"
   },
   {
     "image": "Utility/umang.png",
-    "label": "UMANG"
+    "label": "UMANG",
+    "link": "/umang"
   },
   {
     "image": "Utility/abha.png",
-    "label": "ABHA"
+    "label": "ABHA",
+    "link": "/abha"
   }
 ]

@@ -3,9 +3,9 @@ import { useNavigate } from "react-router";
 
 // ✅ Move JSON data outside
 const folders = [
-  { name: "Documents", color: "bg-blue-100", text: "text-blue-600" },
-  { name: "Education", color: "bg-yellow-100", text: "text-yellow-600" },
-  { name: "Health", color: "bg-green-100", text: "text-green-600" },
+  { name: "Documents", image: "/drive/document.jpg", text: "text-blue-600" },
+  { name: "Education", image: "/drive/education.jpg", text: "text-yellow-600" },
+  { name: "Health", image: "/drive/health.jpg", text: "text-green-600" },
 ];
 
 export default function DigiLockerDrive() {
@@ -20,7 +20,7 @@ export default function DigiLockerDrive() {
         </button>
 
         <div className="flex flex-col gap-1 mt-5">
-          <h1 className="text-xl font-semibold">DigiLocker Drive</h1>
+          <h1 className="text-2xl font-bold">DigiLocker Drive</h1>
           <p className="text-sm mt-3">
             *Documents in DigiLocker Drive are NOT treated as authentic original
             documents.
@@ -29,7 +29,7 @@ export default function DigiLockerDrive() {
 
         {/* Storage bar */}
         <div>
-          <div className="mt-5 font-semibold">Used 0.0 byte/1.00 GB</div>
+          <div className="mt-5 font-bold">Used 0.0 byte/1.00 GB</div>
           <div className="w-full bg-blue-950 rounded-full h-1 mt-3">
             {/* Uncomment to show progress */}
             {/* <div className="bg-green-500 h-1 rounded-full" style={{ width: "30%" }}></div> */}
@@ -38,18 +38,19 @@ export default function DigiLockerDrive() {
       </header>
 
       {/* Main Content */}
-      <div className="bg-white flex flex-col grow justify-between h-full mt-4 rounded-t-2xl px-5 py-6">
+      <div className="bg-white flex flex-col grow justify-between mt-4 rounded-t-2xl px-5 py-6">
         {/* Folder List */}
         <div>
-          {folders.map(({ name, color, text }) => (
+          {folders.map(({ name, image, text }) => (
             <div
               key={name}
               className="flex items-center justify-between py-2 "
             >
               <div
-                className={`flex items-center justify-center`}
+                className={`flex items-center gap-2`}
               >
-                <div className="">
+                <img src={image} alt={name} className="h-10 w-10"></img>
+                <div >
                   <div className="text-lg ">{name}</div>
                   <div className="text-sm text-gray-400">0.0 byte</div>
                 </div>
@@ -60,10 +61,12 @@ export default function DigiLockerDrive() {
           ))}
         </div>
 
-        <div className="flex justify-end">
-          <button className="bg-blue-700 text-white rounded-full px-6 py-3 font-semibold text-base">
-            ＋ New
+        <div className="fixed bottom-5 right-0 px-5 ">
+          <button className="bg-blue-800 text-white items-center rounded-full w-28 px-5 py-3 text-base font-bold flex gap-3">
+            <span className="text-xl">+</span>
+            New
           </button>
+
         </div>
       </div>
     </div>
