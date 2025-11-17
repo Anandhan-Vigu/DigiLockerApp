@@ -1,8 +1,8 @@
 import React from 'react'
-import aadhar from '../../public/issued-document/aadhar.jpeg'
-import emblem from '../../public/issued-document/emblem.png'
-import pan from '../../public/issued-document/pan.png'
-import xii from '../../public/issued-document/xii.png'
+import aadhar from '/icons/issued-document/aadhar.jpeg'
+import emblem from '/icons/issued-document/emblem.png'
+import pan from '/icons/issued-document/pan.png'
+import xii from '/icons/issued-document/xii.png'
 
 const IssuedDocument = () => {
     return (

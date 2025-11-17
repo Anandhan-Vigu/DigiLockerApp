@@ -30,7 +30,7 @@ export default function Abha() {
 
       <p className="font-medium mb-6">My ABHA Address's</p>
 
-          <img src="/others/abha.jpg" alt="government-employee" className="mx-auto h-52 mt-18"></img>
+          <img src="/icons/others/abha.jpg" alt="government-employee" className="mx-auto h-52 mt-18"></img>
 
 
    

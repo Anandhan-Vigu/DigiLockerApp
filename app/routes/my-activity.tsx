@@ -25,7 +25,7 @@ export default function MyActivities() {
       <div className="space-y-4">
         {activities.map((item, i) => (
           <div key={i} className="flex gap-3 items-center">
-            <img src="/my-activities/myactivitypdf.png" className="w-14 h-14 bg-blue-100 rounded-2xl"></img>
+            <img src="/icons/my-activities/myactivitypdf.png" className="w-14 h-14 bg-blue-100 rounded-2xl"></img>
             <div>
               <p className="text-sm text-gray-700">{item.text}</p>
               <p className="text-xs text-gray-500 mt-2">{item.time}</p>

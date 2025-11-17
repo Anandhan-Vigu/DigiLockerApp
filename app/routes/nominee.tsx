@@ -15,7 +15,7 @@ export default function Nominee() {
       </p>
 
 
-      <img src="/others/nominee.jpg" alt="nominee" className="mx-auto h-72 mt-18"></img>
+      <img src="/icons/others/nominee.jpg" alt="nominee" className="mx-auto h-72 mt-18"></img>
 
 
       <button className="bg-indigo-700 fixed bottom-5  left-0 right-0 mx-5  text-white py-3 rounded-full font-medium">

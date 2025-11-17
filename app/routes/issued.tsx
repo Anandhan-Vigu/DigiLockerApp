@@ -1,96 +1,65 @@
-import { RefreshCcw, MoreVertical, Home, Search, Award, User } from "lucide-react";
-import { IoHomeOutline } from "react-icons/io5";
-import { FiSearch } from "react-icons/fi";
-import { PiCertificateBold } from "react-icons/pi";
-import { HiOutlineUser } from "react-icons/hi";
-import { HiOutlineCloud, HiOutlineDocument } from "react-icons/hi";
-import { MdOutlineEmojiEvents } from "react-icons/md";
-import { IoPersonOutline } from "react-icons/io5";
+import emblem from '/icons/home-logo/emblem.jpg';
+import logo from '/icons/home-logo/logo.jpg';
+
+const issuedDocs = [
+  {
+    id: 1,
+    title: "Aadhaar Card",
+    agency: "Unique Identification Authority of India (UIDAI)",
+    image: "/icons/issued-document/aadhar.jpeg",
+  },
+  {
+    id: 2,
+    title: "PAN Verification Record",
+    agency: "Income Tax Department",
+    image: "/icons/issued-document/pan.png",
+  },
+];
 
 export default function IssuedDocuments() {
   return (
     <div className="min-h-screen bg-white flex flex-col">
-      {/* Header */}
-      <div className="bg-[#4A00E0] pt-10 pb-6 px-5 rounded-b-3xl relative">
-        
-        <div className="flex justify-between items-center mb-6">
-          <img
-            src="/gov-emblem.png"
-            alt="gov"
-            className="w-8 h-8 opacity-90"
-          />
+      <div className="w-full space-y-5 h-full text-black">
 
-          <RefreshCcw size={24} color="white" />
-        </div>
-
-        <div className="flex items-center gap-2 mb-2">
-          <img src="/digilocker-icon.png" className="w-8 h-8" />
-          <span className="text-white font-semibold text-xl">DigiLocker</span>
-        </div>
-
-        <h2 className="text-white text-2xl font-bold">Issued Documents</h2>
-        <p className="text-white mt-1 text-sm opacity-90">
-          DigiLocker 'Issued Documents' are at par with original
-          documents as per IT ACT, 2000
-        </p>
-
-        <img
-          src="/header-bg-shape.png"
-          className="absolute right-0 bottom-0 h-24 opacity-20"
-        />
-      </div>
-
-      {/* Body */}
-      <div className="px-5 mt-6 flex-1">
-        <h3 className="text-gray-800 font-semibold text-lg mb-4">
-          My Issued Document(2)
-        </h3>
-
-        {/* Document List */}
-        <div className="space-y-5">
-          {/* Aadhaar */}
-          <div className="flex items-center justify-between">
-            <div className="flex gap-3">
-              <img
-                src="/aadhaar.png"
-                className="w-14 h-14 rounded-lg"
-              />
-              <div>
-                <p className="font-semibold text-gray-800 text-base">
-                  Aadhaar Card
-                </p>
-                <p className="text-gray-500 text-sm">
-                  Unique Identification Authority of India (UIDAI)
-                </p>
-              </div>
-            </div>
-            <MoreVertical className="text-gray-500" />
+        {/* Blue Section */}
+        <div className="relative bg-blue-800 h-56 rounded-br-[200px] rounded-bl-[10px] px-5 py-5">
+          <div className="flex items-center">
+            <img src={emblem} alt="Emblem" className="h-14 w-10" />
+            <img src={logo} alt="Logo" className="h-9 w-8 ml-2" />
+            <p className="text-white text-2xl font-bold ml-1">DigiLocker</p>
           </div>
 
-          <hr />
+          <h2 className="text-white text-2xl font-bold mt-2">Issued Documents</h2>
 
-          {/* PAN */}
-          <div className="flex items-center justify-between">
-            <div className="flex gap-3">
-              <img
-                src="/pan.png"
-                className="w-14 h-14 rounded-lg"
-              />
-              <div>
-                <p className="font-semibold text-gray-800 text-base">
-                  PAN Verification Record
-                </p>
-                <p className="text-gray-500 text-sm">
-                  Income Tax Department
-                </p>
-              </div>
-            </div>
-            <MoreVertical className="text-gray-500" />
+          <p className="text-white mt-3 text-sm font-semibold">
+            DigiLocker 'Issued Documents' are at par with original documents as per IT ACT, 2000
+          </p>
+        </div>
+
+        {/* Body */}
+        <div className="px-5 mt-6 flex-1">
+          <h3 className="text-gray-800 font-semibold text-lg mb-4">
+            My Issued Document ({issuedDocs.length})
+          </h3>
+
+          <div className="space-y-5">
+            {issuedDocs.map((doc) => (
+              <div key={doc.id}>
+                  <div className="flex gap-3">
+                    <img src={doc.image} className="w-16 h-12 bg-white p-1 rounded-lg shadow-2xl " />
+                    <div className="border-b border-gray-400 w-full flex flex-col pb-3">
+                      <p className="font-semibold text-gray-800 text-base">
+                        {doc.title}
+                      </p>
+                      <p className="text-gray-500 text-sm">{doc.agency}</p>
+                    </div>
+                  </div>
+                </div>
+            ))}
           </div>
         </div>
-      </div>
 
-   
+      </div>
     </div>
   );
 }

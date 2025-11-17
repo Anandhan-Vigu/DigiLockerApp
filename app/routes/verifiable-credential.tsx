@@ -79,7 +79,7 @@ const VerifiableCredential: React.FC = () => {
           Verifiable Credential
         </h1>
         <p className="text-gray-600 text-sm">A Verifiable Credential (VC) is a secure digital document that verifies specific information about a person or entity, such as identity, qualifications, or permissions. In DigiLocker, the VC feature allows you to store, manage, and share these credentials with full control over your data. As the credential holder, you can easily share a QR code or secure link with a verifier to confirm authenticity.</p>
-        <img src="/others/verifiable-credential-logo.jpg" alt="verifiable-credential-logo" className="mt-5"></img>
+        <img src="/icons/others/verifiable-credential-logo.jpg" alt="verifiable-credential-logo" className="mt-5"></img>
 
       </div>
       {/* Accordions */}

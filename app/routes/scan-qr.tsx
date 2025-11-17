@@ -18,7 +18,7 @@ export default function ScanQr() {
       <p className="text-gray-500 font-semibold text-sm">
         <b>Note:</b> Now, this scanner scans all the QR Codes.
       </p>
-      <img src="/others/scan.jpg" alt="government-employee" className="mx-auto h-64 mt-10"></img>
+      <img src="/icons/others/scan.jpg" alt="government-employee" className="mx-auto h-64 mt-10"></img>
 
      
 

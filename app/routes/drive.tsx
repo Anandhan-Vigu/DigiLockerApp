@@ -3,9 +3,9 @@ import { useNavigate } from "react-router";
 
 // ✅ Move JSON data outside
 const folders = [
-  { name: "Documents", image: "/drive/document.jpg", text: "text-blue-600" },
-  { name: "Education", image: "/drive/education.jpg", text: "text-yellow-600" },
-  { name: "Health", image: "/drive/health.jpg", text: "text-green-600" },
+  { name: "Documents", image: "/icons/drive/document.jpg", text: "text-blue-600" },
+  { name: "Education", image: "/icons/drive/education.jpg", text: "text-yellow-600" },
+  { name: "Health", image: "/icons/drive/health.jpg", text: "text-green-600" },
 ];
 
 export default function DigiLockerDrive() {

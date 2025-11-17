@@ -1,0 +1,61 @@
+[
+    {
+        "label": "Central Government",
+        "image": "/icons/search-categories/common.png"
+    },
+    {
+        "label": "Industry & Private Sector",
+        "image": "/icons/search-categories/industry.png"
+
+    },
+    {
+        "label": "Education & Learning",
+        "image": "/icons/search-categories/education.png"
+
+    },
+    {
+        "label": "Government & Public Sector",
+        "image": "/icons/search-categories/government.png"
+
+    },
+    {
+        "label": "Banking, Financial Service",
+        "image": "/icons/search-categories/banking.png"
+
+    },
+    {
+        "label": "Skill & Vocational",
+        "image": "/icons/search-categories/skill.png"
+
+    },
+    {
+        "label": "Ministry of Defence",
+        "image": "/icons/search-categories/ministry.png"
+
+    },
+    {
+        "label": "Transport & Infrastructure",
+        "image": "/icons/search-categories/transport.png"
+
+    },
+    {
+        "label": "Health & Wellness",
+        "image": "/icons/search-categories/health.png"
+
+    },
+    {
+        "label": "Identity Docs",
+        "image": "/icons/search-categories/identity.png"
+
+    },
+    {
+        "label": "Sports & Culture",
+        "image": "/icons/search-categories/sports.png"
+
+    },
+    {
+        "label": "National Service Scheme",
+        "image": "/icons/search-categories/national.png"
+
+    }
+]

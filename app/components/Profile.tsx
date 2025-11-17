@@ -1,7 +1,6 @@
-import React from 'react'
-import authenticator from '../../public/digilocker-utility-icons/authenticator.jpg'
-import emblem from '../../public/home-logo/emblem.jpg'
-import logo from '../../public/home-logo/logo.jpg'
+
+import emblem from '/icons/home-logo/emblem.jpg'
+import logo from '/icons/home-logo/logo.jpg'
 import IssuedDocument from './IssuedDocument'
 const Profile = () => {
     return (
@@ -21,14 +20,14 @@ const Profile = () => {
                         <p className='font-semibold text-xl'>Welcome, Anandhan!</p>{/* Replace with dynamic value */}
                         <p className='text-wrap font-semibold mt-3 text-sm'>DigiLocker 'Issued Documents' are at par with original Documents as per IT ACT, 2000</p>
                     </div>
-                    <img src='menu/profile-placeholder.png' alt="profile" className="h-18 w-16 rounded-full" />
+                    <img src='/icons/menu/profile-placeholder.png' alt="profile" className="h-20 w-20 rounded-full" />
                 </div>
                 <div className='flex justify-between items-center w-[85%]'>
                     <p className='font-bold   text-base'>Issued Documents</p>
                     <button className=' px-3 rounded-4xl bg-violet-300 text-blue-700'>See All</button>
                 </div>
             </div>
-            <div className='absolute w-full bottom-0 z-5'>
+            <div className='absolute w-full bottom-0 z-1'>
                 <IssuedDocument />
             </div>
         </div>

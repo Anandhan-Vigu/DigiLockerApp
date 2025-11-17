@@ -1,6 +1,6 @@
 {
   "title": "Driving License",
-    "image":"/document-you-might-need/drivinglicence.png",
+    "image":"/icons/home-document-you-might-need/drivinglicence.png",
   "content": [
     { "name": "Transport Department", "state": "Assam" },
     { "name": "Motor Vehicle Department", "state": "Kerala" },

@@ -13,7 +13,8 @@ type BannerData = {
   buttonText: string;
   image: string;
   color: string;
-  buttonColor: string
+  buttonColor: string;
+  link:string
 
 };
 
@@ -25,9 +26,10 @@ const bannerData: BannerData[] = [
     year: 2025,
     description: 'SSC and IPE Marksheets',
     buttonText: 'Available Now',
-    image: 'new-in-digi-locker/ap.jpg',
+    image: '/icons/new-in-digi-locker/ap.jpg',
     color: 'from-[#5b5fbf] to-[#8d8fef]',
-    buttonColor: '#5b5fbf'
+    buttonColor: '#5b5fbf',
+    link:'/form'
   },
   {
     id: 2,
@@ -35,9 +37,11 @@ const bannerData: BannerData[] = [
     year: 2025,
     description: 'Marksheets of Class X and XII',
     buttonText: 'Available Now',
-    image: 'new-in-digi-locker/cbsc.png',
+    image: '/icons/new-in-digi-locker/cbsc.png',
     color: 'from-[#0472b2] to-[#43b6ef]',
-    buttonColor: '#0472b2'
+    buttonColor: '#0472b2',
+        link:'/form'
+
 
   },
   {
@@ -46,9 +50,11 @@ const bannerData: BannerData[] = [
     year: 2025,
     description: 'Marksheets of Class XII',
     buttonText: 'Available Now',
-    image: 'new-in-digi-locker/jk.jpg',
+    image: '/icons/new-in-digi-locker/jk.jpg',
     color: 'from-[#1786d7] to-[#68c2ff]',
-    buttonColor: '#1786d7'
+    buttonColor: '#1786d7',
+        link:'/form'
+
   },
   {
     id: 4,
@@ -56,9 +62,11 @@ const bannerData: BannerData[] = [
     year: 2025,
     description: 'Marksheets of Class X and XII',
     buttonText: 'Available Now',
-    image: 'new-in-digi-locker/manipur.jpg',
+    image: '/icons/new-in-digi-locker/manipur.jpg',
     color: 'from-[#6f308d] to-[#b07ed5]',
-    buttonColor: '#6f308d'
+    buttonColor: '#6f308d',
+        link:'/form'
+
 
   }
 ];
@@ -108,10 +116,10 @@ function APOSSMarksheetBanner({ data }: APOSSMarksheetBannerProps) {
           {data.title}
         </h2>
         <p className="text-white text-base font-bold">{data.description}</p>
-        <button style={{ color: data.buttonColor }}
+        <a href={data.link} style={{ color: data.buttonColor }}
           className={` bg-white  font-semibold px-4 py-1 rounded-xl w-fit`}>
           {data.buttonText}
-        </button>
+        </a>
       </div>
     </div>
   );

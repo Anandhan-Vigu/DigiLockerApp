@@ -5,31 +5,31 @@ const profileMenuGroups = [
     {
         title: "Main",
         items: [
-            { label: "Drive", img: "menu/drive.png" },
-            { label: "My Account", img: "menu/myaccount.png" },
-            { label: "Nominee", img: "menu/nomine.png" },
-            { label: "Settings", img: "menu/settings.png" },
+            { label: "Drive", img: "/icons/menu/drive.png" },
+            { label: "My Account", img: "/icons/menu/myaccount.png" },
+            { label: "Nominee", img: "/icons/menu/nomine.png" },
+            { label: "Settings", img: "/icons/menu/settings.png" },
         ],
     },
     {
         title: "Activity",
         items: [
-            { label: "Scan QR", img: "menu/scanqr.png" },
-            { label: "My Activity", img: "menu/myactivity.png" },
+            { label: "Scan QR", img: "/icons/menu/scanqr.png" },
+            { label: "My Activity", img: "/icons/menu/myactivity.png" },
         ],
     },
     {
         title: "Info",
         items: [
-            { label: "Help", img: "menu/help.png" },
-            { label: "About", img: "menu/about.png" },
+            { label: "Help", img: "/icons/menu/help.png" },
+            { label: "About", img: "/icons/menu/about.png" },
         ],
     },
     {
         title: "Account",
         items: [
-            { label: "Switch Account", img: "menu/switchaccount.png" },
-            { label: "Logout", img: "menu/logout.png" },
+            { label: "Switch Account", img: "/icons/menu/switchaccount.png" },
+            { label: "Logout", img: "/icons/menu/logout.png" },
         ],
     },
 ];
@@ -39,7 +39,7 @@ export default function ProfileMenu() {
         <div className="p-5 text-black">
             {/* Profile Header */}
             <div className=" rounded-xl gap-2  p-4  flex items-center border-violet-300 border-2 ">
-                <img src='menu/profile-placeholder.png' alt="profile" className="h-18 w-16 rounded-full" />
+                <img src='icons/menu/profile-placeholder.png' alt="profile" className="h-18 w-18 rounded-full" />
 
                 <div>
                     <div className="font-semibold text-lg">Anandhan</div>

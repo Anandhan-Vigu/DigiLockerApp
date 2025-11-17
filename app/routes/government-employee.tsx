@@ -15,7 +15,7 @@ export default function GovernmentEmployee() {
         Introducing Documents for Government employees. Easily fetch your service records, pay slips, NPS statements, and more from authorized issuers.
       </p>
       <p className="font-bold">My issued Government Documents</p>
-      <img src="/others/government-employee.jpg" alt="government-employee" className="mx-auto h-52 mt-18"></img>
+      <img src="/icons/others/government-employee.jpg" alt="government-employee" className="mx-auto h-52 mt-18"></img>
 
       <p className="text-gray-500 text-center">You haven’t fetched any documents yet...</p>
       <button className="bg-indigo-600 text-xl fixed bottom-10 right-10 text-white px-5 py-3 rounded-full font-bold">
