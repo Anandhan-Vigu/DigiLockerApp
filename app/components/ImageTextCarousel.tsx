@@ -65,10 +65,10 @@ export default function ImageTextCarousel({ name }: ImageTextCarouselProps) {
             ))}
           </div>
 
-          <button className='px-6 py-2 mx-auto rounded-4xl bg-white text-violet-900 w-fit font-semibold text-base flex items-center gap-3'>
+          <a href='/search' className='px-10 py-3 mx-auto shadow-2xl rounded-4xl bg-white text-violet-900 w-fit font-semibold text-base flex items-center gap-3'>
             Explore More
             <FaArrowRight />
-          </button>
+          </a>
         </>
       )}
     </div>

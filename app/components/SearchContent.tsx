@@ -82,7 +82,7 @@ const SearchContent = () => {
             </div>
             <div>
                 <SearchStates />
-                <button className='px-6 py-2 mt-5 mx-auto rounded-4xl bg-white text-violet-900 w-fit font-semibold  text-base flex items-center gap-3'>Explore More
+                <button className='px-10 py-3 mx-auto shadow-2xl  mt-5  rounded-4xl bg-white text-violet-900 w-fit font-semibold  text-base flex items-center gap-3'>Explore More
                     <FaArrowRight />
                 </button>
             </div>
